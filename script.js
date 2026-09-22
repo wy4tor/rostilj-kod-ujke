@@ -13,6 +13,11 @@ document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
+    if (link.getAttribute("href") === "#top") {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
     const target = document.querySelector(link.getAttribute("href"));
     if (!target) return;
     event.preventDefault();

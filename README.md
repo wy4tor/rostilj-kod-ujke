@@ -17,20 +17,22 @@ Moderan landing page za roštilj u Bojniku.
 
 ## Kako otvoriti u Cursor-u
 
-1. Raspakuj ZIP.
-2. Otvori folder `rostilj-kod-ujke-landing-v2` u Cursor-u.
+1. Kloniraj repozitorijum ili koristi postojeći lokalni folder.
+2. Otvori folder `rostilj-kod-ujke-landing` u Cursor-u.
 3. Otvori `index.html`.
 4. Pokreni preko Live Server ekstenzije ili duplim klikom na `index.html`.
 
-## Git komande za novi repo
+## Git repozitorijum
+
+- Repozitorijum: https://github.com/wy4tor/rostilj-kod-ujke
+- Remote `origin`: `https://github.com/wy4tor/rostilj-kod-ujke.git`
+- Glavna grana: `main` (prati `origin/main`).
+
+Za novu lokalnu kopiju:
 
 ```powershell
-git init
-git add .
-git commit -m "Prva verzija sajta Roštilj Kod Ujke"
-git branch -M main
-git remote add origin https://github.com/wy4tor/rostilj-kod-ujke.git
-git push -u origin main
+git clone https://github.com/wy4tor/rostilj-kod-ujke.git rostilj-kod-ujke-landing
+cd rostilj-kod-ujke-landing
 ```
 
 Za kasnije izmene:
@@ -39,7 +41,7 @@ Za kasnije izmene:
 git status
 git add .
 git commit -m "Opis izmene"
-git push
+git push origin main
 ```
 
 ## V4 izmene
@@ -54,3 +56,10 @@ git push
 - Hero natpis „Naruči i pokupi” je podignut i sada je čitljiviji.
 - Sva bitna pojavljivanja telefona su klikabilna.
 - Svako vidljivo „Naruči” u CTA delovima vodi na poziv telefonom.
+
+## Najnovije izmene
+
+- Podešeni prored i veličine naslova radi sprečavanja preklapanja teksta.
+- Pozadinski video je svetliji i vidljiv kroz sekciju brzog biranja; zatamnjenje počinje od sekcije „Meni”.
+- Okviri kartica su blago providniji.
+- Link „Nazad na vrh” direktno vraća stranicu na početak.

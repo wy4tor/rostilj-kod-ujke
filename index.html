@@ -15,12 +15,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body id="top">
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-pljeskavica.jpg" aria-hidden="true">
+    <source src="assets/hero-video.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
   <div class="noise"></div>
   <div class="page-glow page-glow-red"></div>
   <div class="page-glow page-glow-yellow"></div>
 
-  <header class="site-header" id="top">
+  <header class="site-header">
     <a class="brand" href="#top" aria-label="Roštilj Kod Ujke početna">
       <span><strong>Roštilj Kod Ujke</strong><small>Bojnik</small></span>
     </a>
@@ -34,10 +38,6 @@
 
   <main>
     <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-pljeskavica.jpg" aria-hidden="true">
-        <source src="assets/hero-video.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-overlay"></div>
       <div class="hero-smoke smoke-a"></div>
       <div class="hero-smoke smoke-b"></div>
 
