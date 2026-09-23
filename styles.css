@@ -117,7 +117,7 @@ a { color: inherit; }
 
 .sticky-call { position: fixed; right: 1rem; bottom: 1rem; z-index: 30; display: inline-flex; align-items: center; gap: .7rem; color: #080808; background: linear-gradient(135deg, var(--yellow), #ffb400); text-decoration: none; padding: .85rem 1rem; border-radius: 999px; font-weight: 950; box-shadow: 0 0 35px rgba(255,242,0,.4), 0 14px 36px rgba(0,0,0,.45); }
 .sticky-call span { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: #080808; color: var(--yellow); }
-.footer { position: relative; z-index: 2; display: flex; justify-content: space-between; gap: 1rem; padding: 2rem clamp(1rem, 4vw, 4rem); color: var(--muted); border-top: 1px solid var(--line); }
+.footer { position: relative; z-index: 2; display: flex; justify-content: space-between; gap: 1rem; padding: 2rem clamp(1rem, 4vw, 4rem) 6rem; color: var(--muted); border-top: 1px solid var(--line); }
 .footer a { color: var(--yellow); text-decoration: none; font-weight: 900; }
 .reveal { opacity: 0; transform: translateY(18px); transition: .7s ease; }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
@@ -484,6 +484,15 @@ body {
 }
 
 /* Razmak redova i veličine natpisa prate raspoloživu širinu kartice. */
+.hero h1,
+.section-head h2,
+.cta-box h2,
+.contact-copy h2,
+.grill-logo strong,
+.map-card strong {
+  font-weight: 400;
+}
+
 body {
   line-height: 1.5;
 }
